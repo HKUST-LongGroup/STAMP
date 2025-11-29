@@ -1,4 +1,8 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
 
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
 
 import torch
 
@@ -95,9 +99,22 @@ def _build_sam(
         pixel_mean=[123.675, 116.28, 103.53],
         pixel_std=[58.395, 57.12, 57.375],
     )
-    sam.eval()
-    if checkpoint is not None:
-        with open(checkpoint, "rb") as f:
-            state_dict = torch.load(f)
-        sam.load_state_dict(state_dict)
+    from huggingface_hub import hf_hub_download
+    import os
+    if checkpoint is None or not os.path.exists(checkpoint):
+        # If the checkpoint is not provided or does not exist locally, download it from Hugging Face
+        print(f"Model file not found locally: {checkpoint}, downloading from Hugging Face...")
+        
+        try:
+            checkpoint = hf_hub_download(
+                repo_id="HCMUE-Research/SAM-vit-h",
+                filename="sam_vit_h_4b8939.pth"
+            )
+            print(f": {checkpoint}")
+        except Exception as e:
+            raise RuntimeError(f"Model download failed, please check your network or download manually: {e}")
+
+    with open(checkpoint, "rb") as f:
+        state_dict = torch.load(f)
+    sam.load_state_dict(state_dict)
     return sam
