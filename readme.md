@@ -7,7 +7,7 @@
   <div>
       <a href="https://jiazhen-code.github.io/about.me/" target="_blank">Jiazhen Liu</a>,
       <a href="#" target="_blank">Mingkuan Feng</a>,
-      <a href="https://zjuchenlong.github.io/" target="_blank">Long Chen</a>📧
+      <a href="https://zjuchenlong.github.io/" target="_blank">Long Chen</a>
   </div>
   <!-- 3. 机构信息 -->
   <div>
@@ -29,16 +29,10 @@
   <br>
 
   <!-- 5. 演示图片/Teaser -->
-  <img src="https://i.imgur.com/waxVImv.png" width="90%" alt="Teaser Image">
+  <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">
 
 </div>
 
-<p align="center">
-    <img src="https://i.imgur.com/waxVImv.png" alt="Oryx Video-ChatGPT">
-</p>
-
-
----
 
 ## Abstract
 *Integrating segmentation into Multimodal Large Language Models (MLLMs) presents a core trilemma: simultaneously preserving dialogue ability, achieving high segmentation performance, and ensuring fast inference. Prevailing paradigms are forced into a compromise. Embedding prediction methods introduce a conflicting pixel-level objective that degrades the MLLM's general dialogue abilities. The alternative, next-token prediction, reframes segmentation as an autoregressive task, which preserves dialogue but forces a trade-off between poor segmentation performance with sparse outputs or prohibitive inference speeds with rich ones. We resolve this trilemma with **all-mask prediction**, a novel paradigm that decouples autoregressive dialogue generation from non-autoregressive mask prediction. We present *STAMP*: **S**imultaneous **T**extual **A**ll-**M**ask **P**rediction, an MLLM that embodies this paradigm. After generating a textual response, STAMP predicts an entire segmentation mask in a single forward pass by treating it as a parallel “fill-in-the-blank" task over image patches. This design maintains the MLLM's dialogue ability by avoiding conflicting objectives, enables high segmentation performance by leveraging rich, bidirectional spatial context for all mask tokens, and achieves exceptional speed. Extensive experiments show that STAMP significantly outperforms state-of-the-art methods across multiple segmentation benchmarks, providing a solution that excels in dialogue, segmentation, and speed without compromise.*
@@ -48,8 +42,8 @@
 </p>
 
 <p align="center">
-  <span style="display:block; text-align:left; max-width:80%; margin:auto; font-style:italic; color:#666;">
-  Fig. Comparison of MLLM-based segmentation paradigms. (a) Embedding Prediction: A conflicting pixel-level objective (e.g., LISA) degrades the MLLM's general dialogue capabilities. (b) Next-token Prediction: Generates masks autoregressively (e.g., Text4Seg), forcing a trade-off between poor segmentation performance (for sparse outputs) and slow inference. (c) Our All-mask Prediction: ...
+  <span style="display:block; text-align:justify; max-width:80%; margin:auto; font-style:italic; color:#666;">
+  Fig. Comparison of MLLM-based segmentation paradigms. (a) Embedding Prediction: A conflicting pixel-level objective (e.g., LISA) degrades the MLLM's general dialogue capabilities. (b) Next-token Prediction: Generates masks autoregressively (e.g., Text4Seg), forcing a trade-off between poor segmentation performance (for sparse outputs) and slow inference. Our All-mask Prediction: We decouple dialogue generation (autoregressive) from mask generation (non-autoregressive). By simultaneously predicting all mask tokens as patch-wise classifications in a single pass, our paradigm resolves the segmentation trilemma, uniting preserved dialogue abilities, high segmentation performance and fast inference speed.
   </span>
 </p>
 
