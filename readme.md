@@ -269,7 +269,7 @@ If you find this work useful, please cite our paper:
 
 ## 📄 License
 
-This project is licensed under the Apache 2.0 License.
+This project is licensed under the MIT License.
 
 ## 📧 Contact
 
