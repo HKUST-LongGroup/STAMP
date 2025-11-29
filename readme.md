@@ -22,7 +22,7 @@
   
   <!-- Project Website -->
   <a href="https://huggingface.co/JiaZL/STAMP-2B-uni" target="_blank">
-    <img src="https://img.shields.io/badge/Project-HuggingFace-FFD21E.svg?logo=huggingface&logoColor=black" alt="Project Website">
+  <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Project-FFD21E" alt="Hugging Face Project">
   </a>
   
   <!-- Online Demo -->
