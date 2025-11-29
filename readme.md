@@ -53,8 +53,9 @@
 
 
 ## Dependencies and Installation
-
+Clone the repository and install the required dependencies:
 ```
+git clone https://github.com/HKUST-LongGroup/STAMP.git
 cd STAMP
 
 # create new anaconda env
@@ -178,14 +179,14 @@ To run inference with STAMP-2B-uni, please pre-download the following checkpoint
 * **[STAMP-2B-uni model](https://huggingface.co/JiaZL/STAMP-2B-uni)**
 * **[SAM checkpoint (sam_vit_h_4b8939.pth)](https://huggingface.co/HCMUE-Research/SAM-vit-h/blame/main/sam_vit_h_4b8939.pth)**
 ```
-CUDA_VISIBLE_DEVICES="0" python STAMP/run_seg_ref.py --model-path="JiaZL/STAMP-2B-uni" --image-file="STAMP/images/horses.png" --sam_path="sam_vit_h_4b8939.pth" --query="Please segment the trees in the image."
+CUDA_VISIBLE_DEVICES="0" python STAMP/run_seg_ref.py --model-path="JiaZL/STAMP-2B-uni" --image-file="STAMP/images/horses.png" --sam_path="HCMUE-Research/SAM-vit-h" --query="Please segment the white horse in the image."
 ```
 ### Quick Inference with STAMP-7B
 To run inference with STAMP-7B model, please pre-download the following checkpoints to expedite the workflow:
 * **[STAMP-7B model](https://huggingface.co/JiaZL/STAMP-7B-lora)**
 * **[SAM checkpoint (sam_vit_h_4b8939.pth)](https://huggingface.co/HCMUE-Research/SAM-vit-h/blame/main/sam_vit_h_4b8939.pth)**
 ```
-CUDA_VISIBLE_DEVICES="0" python STAMP/run_seg_ref.py --model-path="JiaZL/seg-7B" --image-file="STAMP/images/horses.png" --sam_path="sam_vit_h_4b8939.pth" --query="Please segment the trees in the image."
+CUDA_VISIBLE_DEVICES="0" python STAMP/run_seg_ref.py --model-path="JiaZL/seg-7B" --image-file="STAMP/images/horses.png" --sam_path="HCMUE-Research/SAM-vit-h" --query="Please segment the white horse in the image."
 ```
 
 ## Model evaluation
