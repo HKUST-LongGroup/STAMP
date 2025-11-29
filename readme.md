@@ -1,21 +1,35 @@
 <div align="center">
-<h1>Better, Stronger, Faster: Tackling the Trilemma in MLLM-based Segmentation
-with Simultaneous Textual Mask Prediction</h1>
 
-<div>
-    <p href='-' target='_blank'>Jiazhen Liu, Mingkuan Feng, Long Chen</p> 
-</div>
-<div>
-    <sup>HKUST</sup>
+  <!-- 1. 标题 -->
+  <h1>Better, Stronger, Faster: Tackling the Trilemma in MLLM-based Segmentation with Simultaneous Textual Mask Prediction</h1>
 
-</div>
+  <!-- 2. 作者列表 (建议替换 href 里的 # 为作者个人主页链接) -->
+  <div>
+      <a href="https://jiazhen-code.github.io/about.me/" target="_blank">Jiazhen Liu</a>,
+      <a href="#" target="_blank">Mingkuan Feng</a>,
+      <a href="https://zjuchenlong.github.io/" target="_blank">Long Chen</a>📧
+  </div>
+  <!-- 3. 机构信息 -->
+  <div>
+      The Hong Kong University of Science and Technology (HKUST)
+  </div>
 
-[![Demo](https://img.shields.io/badge/Online-Demo-red)](#)
-*(Coming soon)*
-[![Website](https://img.shields.io/badge/Project-Website-87CEEB)](#)
-*(Coming soon)*
-[![Paper](https://img.shields.io/badge/arXiv-Paper-lightgrey.svg)](#)
-*(To be released)*  
+
+  <br>
+
+  <img src="https://img.shields.io/badge/arXiv-Coming%20Soon-inactive.svg?logo=arxiv&logoColor=b31b1b" alt="Paper Coming Soon">
+  &nbsp;&nbsp;
+  
+  <!-- Project Website -->
+  <img src="https://img.shields.io/badge/Project-Coming%20Soon-inactive.svg?logo=github&logoColor=white" alt="Website Coming Soon">
+  &nbsp;&nbsp;
+  
+  <!-- Online Demo -->
+  <img src="https://img.shields.io/badge/Demo-Coming%20Soon-inactive.svg?logo=gradio&logoColor=orange" alt="Demo Coming Soon">
+  <br>
+
+  <!-- 5. 演示图片/Teaser -->
+  <img src="https://i.imgur.com/waxVImv.png" width="90%" alt="Teaser Image">
 
 </div>
 
@@ -30,7 +44,7 @@ with Simultaneous Textual Mask Prediction</h1>
 *Integrating segmentation into Multimodal Large Language Models (MLLMs) presents a core trilemma: simultaneously preserving dialogue ability, achieving high segmentation performance, and ensuring fast inference. Prevailing paradigms are forced into a compromise. Embedding prediction methods introduce a conflicting pixel-level objective that degrades the MLLM's general dialogue abilities. The alternative, next-token prediction, reframes segmentation as an autoregressive task, which preserves dialogue but forces a trade-off between poor segmentation performance with sparse outputs or prohibitive inference speeds with rich ones. We resolve this trilemma with **all-mask prediction**, a novel paradigm that decouples autoregressive dialogue generation from non-autoregressive mask prediction. We present *STAMP*: **S**imultaneous **T**extual **A**ll-**M**ask **P**rediction, an MLLM that embodies this paradigm. After generating a textual response, STAMP predicts an entire segmentation mask in a single forward pass by treating it as a parallel “fill-in-the-blank" task over image patches. This design maintains the MLLM's dialogue ability by avoiding conflicting objectives, enables high segmentation performance by leveraging rich, bidirectional spatial context for all mask tokens, and achieves exceptional speed. Extensive experiments show that STAMP significantly outperforms state-of-the-art methods across multiple segmentation benchmarks, providing a solution that excels in dialogue, segmentation, and speed without compromise.*
 
 <p align="center">
-  <img src="images/all_mask.jpg" width="80%">
+  <img src="images/STAMP.png" width="80%">
 </p>
 
 <p align="center">
@@ -135,6 +149,8 @@ Download them from the above links, and organize them as follows.
 |   |       ├── instances.json
 │   │       └── ...
 │   ├── reason_seg
+|   ├── coco
+|   │   └── train2017
 |   ├── gqa
 │   |   └── images
 |   ├── ocr_vqa
