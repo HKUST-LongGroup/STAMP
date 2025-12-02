@@ -13,7 +13,7 @@
 
   <br>
 
-  <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank">
+  <a href="https://arxiv.org/pdf/2512.00395" target="_blank">
     <img src="https://img.shields.io/badge/arXiv-Coming%20Soon-inactive.svg?logo=arxiv&logoColor=b31b1b" alt="Paper Coming Soon">
   </a>
   <a href="https://huggingface.co/JiaZL/STAMP-2B-uni" target="_blank">
