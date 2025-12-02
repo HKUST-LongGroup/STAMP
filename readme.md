@@ -14,7 +14,7 @@
   <br>
 
   <a href="https://arxiv.org/pdf/2512.00395" target="_blank">
-    <img src="https://img.shields.io/badge/arXiv-Coming%20Soon-inactive.svg?logo=arxiv&logoColor=b31b1b" alt="arXiv Paper">
+    <img src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?logo=arxiv&logoColor=white">
   </a>
   <a href="https://huggingface.co/JiaZL/STAMP-2B-uni" target="_blank">
     <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Project-FFD21E" alt="Hugging Face Project">
