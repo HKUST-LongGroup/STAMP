@@ -19,7 +19,9 @@
   <a href="https://huggingface.co/JiaZL/STAMP-2B-uni" target="_blank">
     <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Project-FFD21E" alt="Hugging Face Project">
   </a>
-  <img src="https://img.shields.io/badge/Demo-Coming%20Soon-inactive.svg?logo=gradio&logoColor=orange" alt="Demo Coming Soon">
+  <a href="https://huggingface.co/spaces/JiaZL/STAMP-2B-uni" target="_blank">
+    <img src="https://img.shields.io/badge/Demo-Available-brightgreen.svg?logo=gradio&logoColor=orange" alt="Demo Available">
+  </a>
 
   <br><br>
   <img src="https://i.imgur.com/waxVImv.png" alt="Teaser" width="100%">
