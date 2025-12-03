@@ -22,7 +22,7 @@
   <a href="https://huggingface.co/spaces/JiaZL/STAMP-2B-uni" target="_blank">
     <img src="https://img.shields.io/badge/Demo-Available-brightgreen.svg?logo=gradio&logoColor=orange" alt="Demo Available">
   </a>
-  <p align="center"><i>Our online demo runs on a CPU-only machine due to limited funding — performance may be slower than expected. Thanks for your patience!</i></p>
+  <p align="center"><i>Our online demo runs on a CPU-only machine — performance may be slower than expected. Thanks for your patience!</i></p>
 
   <br><br>
   <img src="https://i.imgur.com/waxVImv.png" alt="Teaser" width="100%">
