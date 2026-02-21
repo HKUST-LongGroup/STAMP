@@ -355,14 +355,11 @@ The processed JSON files are listed below:
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@misc{liu2025betterstrongerfastertackling,
+@inproceedings{liu2026STAMP,
       title={Better, Stronger, Faster: Tackling the Trilemma in MLLM-based Segmentation with Simultaneous Textual Mask Prediction}, 
       author={Jiazhen Liu and Mingkuan Feng and Long Chen},
-      year={2025},
-      eprint={2512.00395},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2512.00395}, 
+      year={2026},
+      booktitle={CVPR}
 }
 ```
 
